@@ -1,7 +1,7 @@
 Development environment for haskell, containing the following:
 
 * vim 
-** pathogen
+--* pathogen
 
 * ghc 7.8.3
 
