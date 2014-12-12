@@ -10,7 +10,7 @@ RUN git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vi
 
 RUN git clone https://github.com/eagletmt/ghcmod-vim ~/.vim/bundle/ghcmod-vim
 
-ADD vimrc ~/.vimrc
+ADD vimrc /root/.vimrc
 
 RUN mkdir /opt/repos
 
