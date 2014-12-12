@@ -12,7 +12,7 @@ RUN cd /var/tmp && cd ghc-7.8.3 && sh configure && make install && rm -rf ghc-7.
 
 RUN export LANG=C.UTF-8 && cabal update && cabal install cabal-install && cabal install ghc-mod
 
-#RUN mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+RUN mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 RUN git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim && cd ~/.vim/bundle/vimproc.vim && make
 
