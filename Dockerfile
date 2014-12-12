@@ -1,4 +1,4 @@
-FROM haskell:latest
+FROM haskell:7.8
 
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y git vim curl cabal-install make autoconf wget
 
