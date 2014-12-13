@@ -2,7 +2,8 @@ FROM ubuntu:14.10
 
 RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y git vim curl cabal-install \
-	make autoconf wget tar zlib1g-dev alex happy
+	make autoconf wget tar zlib1g-dev alex happy \
+	docker.io
 
 RUN cd /var/tmp && wget https://www.haskell.org/ghc/dist/7.8.3/ghc-7.8.3-x86_64-unknown-linux-deb7.tar.bz2
 
