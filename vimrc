@@ -11,3 +11,5 @@ set expandtab
 set background=dark
 
 let $PATH = $PATH . ':' . expand('~/.cabal/bin')
+
+autocmd BufWritePre * :%s/\s\+$//e
