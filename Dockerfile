@@ -23,5 +23,9 @@ ADD vimrc /root/.vimrc
 
 RUN mkdir /opt/repos
 
+ADD setenv.sh env.conf /var/tmp/
+
+RUN cd /var/tmp && ls -la && bash setenv.sh
+
 EXPOSE 8000
 
