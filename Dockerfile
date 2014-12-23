@@ -11,7 +11,7 @@ RUN cd /var/tmp && tar xvf ghc-7.8.4-x86_64-unknown-linux-deb7.tar.bz2
 
 RUN cd /var/tmp && cd ghc-7.8.4 && sh configure && make install && rm -rf ghc-7.8.4 ghc-7.8.4-x86_64-unknown-linux-deb7.tar.bz2
 
-RUN export LANG=C.UTF-8 && cabal update && cabal install cabal-install #&& cabal install ghc-mod-4.1.6
+RUN export LANG=C.UTF-8 && cabal update && cabal install cabal-install && cabal install ghc-mod-4.1.6
 
 RUN mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -25,7 +25,7 @@ RUN mkdir /opt/repos
 
 ADD setenv.sh env.conf /var/tmp/
 
-RUN cd /var/tmp && ls -la && bash setenv.sh
+RUN cd /var/tmp && bash setenv.sh
 
 EXPOSE 8000
 
