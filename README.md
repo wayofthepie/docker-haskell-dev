@@ -2,7 +2,7 @@
 This repo allows building a dockerized development environment for haskell, containing the following:
 
 * vim
-** With ghcmod-vim and its vim plugin dependencies installed (see https://github.com/eagletmt/ghcmod-vim)
+  * with ghcmod-vim and its vim plugin dependencies installed (see [ghcmod-vim](https://github.com/eagletmt/ghcmod-vim))
 * ghc 7.8.4
 * ghc-mod 5.2.1.2
 * cabal 1.22 
