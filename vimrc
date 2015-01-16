@@ -13,3 +13,8 @@ set background=dark
 let $PATH = $PATH . ':' . expand('~/.cabal/bin')
 
 autocmd BufWritePre * :%s/\s\+$//e
+
+map mc :GhcModCheckAsync<CR>
+map ml :GhcModLintAsync <CR>
+map mt :GhcModType      <CR>
+map mi :GhcModInfo      <CR>
