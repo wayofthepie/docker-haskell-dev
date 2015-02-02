@@ -13,7 +13,7 @@ RUN cd /var/tmp && cd ghc-7.8.4 && sh configure && make install && rm -rf ghc-7.
 
 RUN cabal update 
 
-RUN cabal install cabal-install 
+RUN cabal install cabal-install-1.20.0.6 
 
 RUN export LANG=C.UTF-8 && cabal install ghc-mod-5.2.1.2
 
