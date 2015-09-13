@@ -1,3 +1,5 @@
+#### Deprecated, please use https://github.com/wayofthepie/docker-vim-dev
+
 # Dockerized haskell dev environment
 This repo allows building a dockerized development environment for haskell, containing the following:
 
